@@ -111,14 +111,10 @@ This discrepancy highlighted an area for improvement in the physical design: to 
 
 Moreover, extending the simulation to include sensor noise models and actuator response delays would produce results more representative of the physical system, thus allowing better validation and tuning of control parameters before hardware deployment.
 
-The graph summarized the robotic system’s behavior during a programmed 10-second pause within the simulation. It was possible to graphically visualize and verify, using PlotJuggler, that the simulated robot (“turtle”) stopped for the entire duration of 10 seconds before resuming its movement. Sensor readings confirmed continuous detection of the line throughout the pause, ensuring that the robot remained stationary and precisely positioned. This visualization validated the timing control logic implemented in the simulation environment. This can be seen in Figure \ref{fig:enter-label2}.
+The graph summarized the robotic system’s behavior during a programmed 10-second pause within the simulation. It was possible to graphically visualize and verify, using PlotJuggler, that the simulated robot (“turtle”) stopped for the entire duration of 10 seconds before resuming its movement. Sensor readings confirmed continuous detection of the line throughout the pause, ensuring that the robot remained stationary and precisely positioned. This visualization validated the timing control logic implemented in the simulation environment. This can be seen in the next figure.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{I2.png}
-    \caption{PlotJuggler Results Showing the Robotic Simulation Behavior}
-    \label{fig:enter-label2}
-\end{figure}
+![Resultados de la simulación en PlotJuggler](https://github.com/NydiaHedz/EXAM2-LRT4102/raw/main/NydiaHernandez/media/I2.png)
+
 
 
 

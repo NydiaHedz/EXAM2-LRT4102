@@ -40,7 +40,8 @@ Estos valores permitieron analizar la consistencia y desempeño reactivo del rob
 
 Se midió el tiempo exacto de detención de la tortuga seguidora en un punto de pausa, garantizando que durara 10 segundos mediante el uso de un temporizador interno. Esta métrica permitió evaluar la fidelidad del control temporal en comparación con implementaciones físicas.
 
-El código implementado para simular se puede ver en. Este codigo implementó una simulación en Python para el entorno **turtlesim** de ROS, destinada a reproducir un escenario de seguimiento de línea con tres tortugas que simularon el comportamiento de un robot autónomo.
+El código implementado para simular se puede ver en  [`line_follower.py`](https://github.com/NydiaHedz/EXAM2-LRT4102/blob/main/NydiaHernandez/src/line_follower.py).
+. Este codigo implementó una simulación en Python para el entorno **turtlesim** de ROS, destinada a reproducir un escenario de seguimiento de línea con tres tortugas que simularon el comportamiento de un robot autónomo.
 
 ### Inicialización y Configuración
 
@@ -79,6 +80,14 @@ La función `run_single_iteration` constituyó el núcleo de la simulación. En 
 8. Finalmente, se limpió el entorno eliminando tortugas residuales y dibujos.
 
 El método `run` esperó el arranque completo del entorno turtlesim, ejecutó una limpieza inicial y corrió una única iteración de la simulación. Al finalizar, mostró un resumen de resultados, incluyendo la confirmación del éxito de la simulación.
+
+## Ejecución de la Simulación
+
+Para iniciar la simulación, se utilizó el siguiente comando de lanzamiento de ROS:
+
+```bash
+roslaunch practicas_lab line_follower.launch
+```
 
 ## Control Preciso de la Pausa en la Simulación
 

@@ -94,3 +94,15 @@ Extending the simulation to include sensor noise models and actuator response de
 The graph below summarizes the robotic system’s behavior during the programmed 10-second pause in simulation. Using PlotJuggler, it was possible to visualize and verify that the simulated robot (“turtle”) remained stopped for the entire pause duration before resuming movement. Sensor readings confirmed continuous line detection, ensuring the robot remained stationary and correctly positioned, thereby validating the timing control logic.
 
 ![Simulation Results in PlotJuggler](https://github.com/NydiaHedz/EXAM2-LRT4102/raw/main/NydiaHernandez/media/I2.png)
+
+Aquí tienes una conclusión formal y técnica, en inglés, adecuada para cerrar el reporte o sección sobre la simulación:
+
+---
+
+## Conclusion
+
+The simulation developed using the ROS turtlesim environment effectively demonstrated the feasibility of precise temporal control in an autonomous line-following task. By implementing a software timer to enforce an exact 10-second pause, the simulation achieved a level of timing accuracy that surpasses typical physical implementations, which are subject to noise, actuator delays, and environmental disturbances.
+
+The performance metrics obtained from both physical tests and virtual simulations provided valuable insights into the system’s consistency and responsiveness. The virtual metrics, in particular, confirmed the robustness of the control logic under ideal conditions, highlighting opportunities to improve the physical system’s timing precision through hardware synchronization and adaptive control strategies.
+
+

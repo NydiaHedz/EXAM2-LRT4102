@@ -20,26 +20,19 @@ Una de las métricas físicas utilizadas para evaluar el desempeño del robot fu
 
 A continuación se muestran diez mediciones temporales bajo condiciones reales, evidenciando el tiempo aproximado de respuesta del robot en cada prueba:
 
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\textbf{Trial} & \textbf{Response Time (s)} \\
-\hline
-1 & 9.8 \\
-2 & 10.4 \\
-3 & 10.1 \\
-4 & 9.6 \\
-5 & 10.3 \\
-6 & 9.9 \\
-7 & 10.2 \\
-8 & 9.7 \\
-9 & 10.0 \\
-10 & 9.5 \\
-\hline
-\end{tabular}
-\caption{Timed response measurements in seconds during physical tests}
-\end{table}
+| Trial | Response Time (s) |
+|-------|-------------------|
+| 1     | 9.8               |
+| 2     | 10.4              |
+| 3     | 10.1              |
+| 4     | 9.6               |
+| 5     | 10.3              |
+| 6     | 9.9               |
+| 7     | 10.2              |
+| 8     | 9.7               |
+| 9     | 10.0              |
+| 10    | 9.5               |
+
 
 Estos valores permitieron analizar la consistencia y desempeño reactivo del robot, aportando a la evaluación global del sistema.
 
@@ -51,26 +44,19 @@ Se midió el tiempo exacto de detención de la tortuga seguidora en un punto de 
 
 In the simulation, the behavior of the robotic agent included a timed stop of exactly ten seconds implemented via a software timer. This approach enabled precise control over the pause duration during the path-following routine, which differed from the original physical design where timing accuracy could be affected by sensor noise, actuator delays, and environmental disturbances. Consequently, while the simulation timer provided consistent and exact ten-second stops, real-world implementations likely experienced minor deviations in timing due to inherent mechanical and electronic limitations.
 
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\textbf{Trial} & \textbf{Response Time (s)} \\
-\hline
-1 & 10.0 \\
-2 & 10.0 \\
-3 & 10.0 \\
-4 & 10.0 \\
-5 & 10.0 \\
-6 & 10.0 \\
-7 & 10.0 \\
-8 & 10.0 \\
-9 & 10.0 \\
-10 & 10.0 \\
-\hline
-\end{tabular}
-\caption{Timed response measurements in seconds during virtual tests}
-\end{table}
+| Trial | Response Time (s) |
+|-------|-------------------|
+| 1     | 10.0              |
+| 2     | 10.0              |
+| 3     | 10.0              |
+| 4     | 10.0              |
+| 5     | 10.0              |
+| 6     | 10.0              |
+| 7     | 10.0              |
+| 8     | 10.0              |
+| 9     | 10.0              |
+| 10    | 10.0              |
+
 
 This discrepancy highlighted an area for improvement in the physical design: to increase timing precision, it was recommended to integrate hardware-based timing mechanisms or high-resolution clocks synchronized with sensor feedback. Additionally, implementing adaptive control algorithms that accounted for variable delays and environmental conditions could enhance the reliability of the stop duration in practice.
 

@@ -1,0 +1,7 @@
+<launch>
+    <!-- Ejecuta turtlesim -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim" output="screen"/>
+
+    <!-- Ejecuta el nodo line_follower.py -->
+    <node pkg="practicas_lab" type="line_follower.py" name="line_follower" output="screen"/>
+</launch>
